@@ -20,14 +20,10 @@ jobs:
           extensions: mbstring, xml, ctype, iconv, mysql
           tools: phpstan, phpunit, composer
 
-      # 3. Installer les dépendances
-      - name: Install Dependencies
-        run: composer install --no-progress --prefer-dist
-
-      # 4. Analyse du code (Niveau 9)
+      # 3. Analyse du code (Niveau 9)
       - name: Static Analysis (PHPStan)
         run: phpstan analyse src --level=9
 
-      # 5. Tests unitaires
+      # 4. Tests unitaires
       - name: Run Tests (PHPUnit)
         run: vendor/bin/phpunit tests/
