@@ -8,5 +8,10 @@ Avant de charger le projet, exécuter à la racine du projet la commande :
 
 ### Mise en place d'un serveur PHP en local :
 
-Ouvrir un terminal à la raacine du projet et exécuter la commande
+Ouvrir un terminal à la racine du projet et exécuter la commande
 ```php -S localhost:8000 -t public```
+
+### Exécution du PHPStan
+
+Ouvrir un terminal à la racine du projet et exécuter la commande
+```composer phpstan```
