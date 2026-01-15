@@ -1,0 +1,91 @@
+/*
+404 Error Page CSS - Modern ChatGPT/Gemini Inspired
+--------------------------------------------------
+- Palette: dark background, soft gradients, vibrant accent
+- Font: clean, sans-serif, large headline
+- Centered content, animated elements
+*/
+
+body {
+  background: linear-gradient(135deg, #18181b 0%, #23272f 100%);
+  color: #f3f4f6;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-container {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: rgba(36, 39, 46, 0.85);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  backdrop-filter: blur(8px);
+  max-width: 400px;
+  width: 100%;
+  animation: fadeIn 1s cubic-bezier(.4,0,.2,1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.error-code {
+  font-size: 6rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #00e0ff 0%, #a259ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.05em;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 8px #00e0ff44, 0 0 16px #a259ff22; }
+  to { text-shadow: 0 0 24px #00e0ffcc, 0 0 48px #a259ff88; }
+}
+
+.error-message {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #c7d2fe;
+}
+
+.home-link {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(90deg, #00e0ff 0%, #a259ff 100%);
+  color: #18181b;
+  font-weight: 700;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 12px 0 #00e0ff33;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.home-link:hover {
+  background: linear-gradient(90deg, #a259ff 0%, #00e0ff 100%);
+  color: #fff;
+  box-shadow: 0 4px 24px 0 #a259ff55;
+}
+
+@media (max-width: 500px) {
+  .error-container {
+    padding: 2rem 0.5rem;
+    max-width: 95vw;
+  }
+  .error-code {
+    font-size: 3.5rem;
+  }
+  .error-message {
+    font-size: 1.1rem;
+  }
+}

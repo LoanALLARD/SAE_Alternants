@@ -42,6 +42,7 @@ class Router {
 
     private function sendError404(string $message = "404 - Page non trouvée"): void {
         http_response_code(404);
-        echo $message;
+        // Inclure la vue 404 personnalisée
+        require __DIR__ . '/../views/pages/404.php';
     }
 }

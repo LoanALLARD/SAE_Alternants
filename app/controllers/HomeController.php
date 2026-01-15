@@ -4,6 +4,6 @@ namespace App\Controllers;
 
 class HomeController {
     public function index() :void{
-        echo "Bienvenue sur I-AMU !";
+        require __DIR__.'/../views/pages/login.php';
     }
 }

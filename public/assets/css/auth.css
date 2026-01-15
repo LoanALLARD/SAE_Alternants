@@ -1,0 +1,115 @@
+/*
+Login & Register Page CSS - Moderne, cohérent avec 404
+------------------------------------------------------
+Palette : fond sombre, dégradés doux, accents vibrants
+*/
+
+body {
+  background: linear-gradient(135deg, #18181b 0%, #23272f 100%);
+  color: #f3f4f6;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  background: rgba(36, 39, 46, 0.85);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  backdrop-filter: blur(8px);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 1s cubic-bezier(.4,0,.2,1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  background: linear-gradient(90deg, #00e0ff 0%, #a259ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.form-group {
+  margin-bottom: 1.7rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #c7d2fe;
+  font-size: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  background: #23272f;
+  color: #f3f4f6;
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+  outline: none;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 1px 4px 0 #00e0ff22;
+}
+.form-group input:focus {
+  box-shadow: 0 2px 12px 0 #a259ff55;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 0.8rem 0;
+  background: linear-gradient(90deg, #00e0ff 0%, #a259ff 100%);
+  color: #18181b;
+  font-weight: 700;
+  border: none;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  box-shadow: 0 2px 12px 0 #00e0ff33;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.form-submit:hover {
+  background: linear-gradient(90deg, #a259ff 0%, #00e0ff 100%);
+  color: #fff;
+  box-shadow: 0 4px 24px 0 #a259ff55;
+}
+
+.form-link {
+  display: block;
+  margin-top: 1.2rem;
+  color: #00e0ff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.form-link:hover {
+  color: #a259ff;
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    padding: 1.5rem 0.5rem 1rem 0.5rem;
+    max-width: 95vw;
+  }
+  .form-title {
+    font-size: 1.4rem;
+  }
+}
